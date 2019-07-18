@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link href='style.css' type='text/css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id='title'>Test Survey</h2>
+    <div id='container'>
+      <p id='description'>A small survey to test my Web Development Skills</p>
+
+      <form id='survey-form'>
+
+        <div class='row'>
+          <div class='labels'>
+            <label for='name' id='name-label'>Name:</label>
+          </div>
+          <div class='u-input'>
+            <input id='name' name='name' type='text' class='text-input' placeholder='Enter your name' required>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='labels'>
+            <label for='email' id='email-label'>Email:</label>
+          </div>
+          <div class='u-input'>
+            <input id='email' name='email' type='email' class='text-input' placeholder='Enter your Email' required>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='labels'>
+            <label for='age' id='number-label'>Age:</label>
+          </div>
+          <div class='u-input'>
+            <input id='number' name='age' type='number' min='1' max='150' class='text-input' placeholder='Enter your age'>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='labels'>
+            <label for='dropdown' id='dropdown'>What is your occupation?</label>
+          </div>
+          <div class='u-input'>
+            <select name='dropdown' id='dropdown'>
+              <option disabled value>Select an option</option>
+              <option value='f-student'>Full-Time Student</option>
+              <option value='f-job'>Full-Time Job</option>
+              <option value='p-student'>Part-Time Student</option>
+              <option value='p-job'>Part-Time Job</option>
+              <option value='other'>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='labels'>
+            <label for='favSubject' id='radio-label'>What is your favorite subject:</label>
+          </div>
+          <div class='u-input'>
+            <ul>
+              <li class='radio'><label><input name='radio-buttons' value='1'  type='radio' class='userSelect' >Math</label></li>
+              <li class='radio'><label><input name='radio-buttons' value='2'  type='radio' class='userSelect' >Science</label></li>
+              <li class='radio'><label><input name='radio-buttons' value='3'  type='radio' class='userSelect' ></label>English</li>
+              <li class='radio'><label><input name='radio-buttons' value='3'  type='radio' class='userSelect' >History</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='labels'>
+            <label for='strengths' id='radio-label'>What are your dev strengths?<br>(Check all that apply):</label>
+          </div>
+          <div class='u-input'>
+            <ul id='strengths'>
+              <li class='checkbox'><label><input name='strength-box' value='1'  type='checkbox' class='userSelect' >UI/UX Design</label></li>
+              <li class='checkbox'><label><input name='strength-box' value='2'  type='checkbox' class='userSelect' >Front End Dev</label></li>
+              <li class='checkbox'><label><input name='strength-box'value='3'  type='checkbox' class='userSelect' >Back End Dev</label></li>
+              <li class='checkbox'><label><input name='strength-box' value='4' type='checkbox' class='userSelect'>Data Visualization</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='labels'>
+            <label for='other' id='other-label'>Any other comments/messages:</label>
+          </div>
+          <div class='u-input'>
+            <textarea id='other' name='other' class='text-input' placeholder='Enter any other messages here.....'></textarea>
+          </div>
+        </div>
+
+        <button type='submit' id='submit'>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
